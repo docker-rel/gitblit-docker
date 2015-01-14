@@ -44,4 +44,5 @@ expose 80
 expose 443
 expose 9418
 expose 29418
+volume ["/opt/gitblit-data"]
 cmd ["java", "-server", "-Xmx1024M", "-Djava.awt.headless=true", "-jar", "/opt/gitblit/gitblit.jar", "--baseFolder", "/opt/gitblit-data"]
